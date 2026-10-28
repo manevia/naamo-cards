@@ -1,0 +1,23 @@
+:root{--bg:#1F1F1F;--card:#2B2B2B;--brass:#B8863B;--muted:#9A9A9A;--text:#FFFFFF}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text);font-family:'Inter',system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+main{max-width:460px;margin:0 auto;padding:24px 16px 48px}
+.card{background:var(--card);border-radius:24px;padding:32px 28px;box-shadow:0 20px 60px rgba(0,0,0,.45)}
+.top{display:flex;align-items:flex-start;justify-content:space-between;gap:16px}
+.name{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:30px;line-height:1.1;letter-spacing:-0.02em;margin:0}
+.role{font-size:15px;font-weight:500;color:var(--brass);margin:6px 0 0}
+.tile{flex:none;width:64px;height:64px;border-radius:16px;background:#fff;box-shadow:0 0 0 2px var(--brass);overflow:hidden}
+.tile img{width:64px;height:64px;display:block}
+.company{margin:22px 0 0;font-size:13px;color:var(--muted);letter-spacing:.04em}
+.actions{display:grid;gap:10px;margin-top:26px}
+.btn{display:flex;align-items:center;gap:12px;padding:14px 16px;border-radius:14px;text-decoration:none;color:var(--text);background:#363636;font-size:16px;font-weight:600;transition:background .15s}
+.btn:hover{background:#3F3F3F}
+.btn.primary{background:var(--brass);color:#1A1A1A}
+.btn.primary:hover{background:#C9964A}
+.btn svg{width:22px;height:22px;flex:none}
+.btn small{display:block;font-weight:400;font-size:13px;color:var(--muted)}
+.btn.primary small{color:#3A2D16}
+.foot{text-align:center;margin-top:28px}
+.foot img{width:150px;height:auto;opacity:.95}
+.foot p{margin:10px 0 0;font-size:12px;color:var(--brass);letter-spacing:.04em}
+.foot a{color:var(--muted);text-decoration:none;font-size:12px}
